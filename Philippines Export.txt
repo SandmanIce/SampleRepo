@@ -1,0 +1,63 @@
+Philippines
+3/4/2019
+
+Check Queue, if EDI, go to Booking & S/I Process
+No change in Booking Tab
+Customer Tab
+ - Do Shipper code
+ - Consignee
+ - Notify
+ - Forwarder (Needs company Name)
+
+Container Tab
+ - Checkif it has Entry
+ - M&D input customs Description
+
+* Product Catalog is tandem of vessel and Container
+  -if upload button is red, a retry sometimes fixes it
+
+*once uploaded, we can close window
+
+Back to queue list, GoTO BKG
+
+
+Filer is used by US or canada
+ - if 1, house bl, manual
+ - if 2, needs SCAC
+ - if 3, BCO
+ - need to check route to ensure if it goes by Canada and adjust filer as well
+Container Tab
+ - Validate
+ - if container is ok, click container OK
+Customer Tab
+ - Check for Cut Words
+M&D Tab
+- click M&D(print) check box
+- Check for Prohibited words/phrase
+CM Tab
+ - ClickCopy From MD Button
+ - US bound uses HS Code, MCM COde is used for bound to brazil
+ - if has SCAC, click Self filing
+ - Click Save
+Charge Tab
+ - Click Auto Rating Button
+ - Select Rate
+ - Check STF, it is always included.Manual Add if not existing
+ - Check for SI by Shipper
+ - CHeck Code for Prepaid. Shipper is Consignee Code,
+B/L Issue Tba
+ - Check Vessel,ROuting, B/L Type VS what is in EDI
+ - If No Peding Issue, check Waybill and/or Credit. not it allowed Credit, cannot do Waybill unless in SI
+ - Onboard date and B/L Issue Date Should be same
+ - update for Clause based on CSOP
+ - update for Destination Reqs based on CSOP
+ - B/L preview, ProofRead
+ - Send to Group Mail to serve as reference, "charge" radio button should be up to reveal data
+ - Send to Customer, "no charge" radio Button should be up to hide data
+Go Back to Queue
+-Click end, QA End, Close
+-Click retrieve and check that it is removed from Queue
+
+No Split Invoice
+ 
+
