@@ -1,0 +1,200 @@
+2/26/2019
+EUA Booking
+avg OT per month 2-3
+BL number
+- booking number is 12 digits(First 3 letters from booking office, 1 alpha for year,and 8 numeric auto generated)
+
+
+Indexing
+-checks prefix of BL numbers
+6pm to 11pm, 300 to 400 thursday,friday peak
+3pm to 11pm, 500 avg
+2persons,
+
+same with japan Indexing
+
+11countries, divided by cluster
+swiz,italy,sweden,czec,russia
+denmark,hungary,poland,finland,france,norway
+
+7types loading list for transhipment
+
+*transhipment (TS)
+-inland  haulages
+
+Queueing steps
+-OCPS, turn all filter to NO
+-Check status,check inquiry status,status is blank
+*SI are subject to indexing, EDI are autofilled
+-check sorting is based on timeleft
+-check criteria is advanced manifest
+-EU should be processed within 24hrs(pink)Beyond
+-SLA,no color should be processed today
+*there is productivity logsheet
+*might need to have PIC list
+*4 assistant supervisors 4hrs daily
+*VIP is not tied to subtrade
+
+Processing
+Steps
+-SI Convert to pdf get needed data
+-there are instsructions highlighted
+-go to booking creation
+
+*look for transhipment remarks (barge) find vessel,ETD,Loading port
+  -get application Date to identify rate(rate varies on date)
+
+-put note on PDF
+-identify SI from remarks
+-go to charge Remarks, needs screenshot. screenshot put on common folder
+-BL Issue, on remark,BL Clause, put remark if any
+-go to GDrive,  gets EXPDOC SOP for lookup(file changes daily)
+-after coding, upload EDI
+-go to booking,e-Booking Upload Copy window,check if all required info is complete
+-go to customer,confirm customer info,exact match with exceptions on space counts
+-fill up form
+*do not touch forwarder
+*check if there is a container link
+*M&D
+-C/M
+*Hard stop, removes all changes
+-After upload, click go to bkg
+-makesure to link containers
+-make sure approval is Y
+*just proceed and note all inquiries unless you encounter a hardstop
+-invoice reference should always be present
+cut off recording
+-input reference
+-always check if print is checked
+-for US destination, container should always have cargo receive date
+-may sariling application rate yung Transhipment
+-red original e-sI, check cleared*
+-reference,tick, save
+-package,weight,CBM  - arrange CM *3500 characters for M&D,CM,35 characters per description
+-if jpn,always marked, thai, always no mark
+-fill up HS Code
+-problem usually with weight and measure, (comma and period)
+-US mandates manifest number if you have housebillnumber
+-tick for DG,Awk,Hanger
+-after CM, do M&D
+*Copy from CM function found in M&D
+-fRT Term
+*sweden, mandatory PO and Other Number, MRN No.
+-Multishipment Detail for container linkage
+*>> used to indicate continuation
+Commodity identification
+-Commodity, Routing info, R/D
+-Charge TAB, always follow PF ETD except Transhipment
+-update remarks
+-check routing if there are discrepancies
+-update Doc fee
+-tick onboard date
+-validate prohibited(list vs remarks)
+*EDI simple, 20mins - 15mins
+*EDI complex 30mins ,2hours (2x a month)
+*SI simple 30mins 21mins
+*Complex 25mins to 30mins,2hours (2x a month)
+
+
+ProofReading
+*update all discrepancies as you discover them during proof reading
+*3 to 5 minutes to 10mins
+*SI does alpha check
+*5 t0 7 mins to 20mins
+70% EDI 30% Manual
+50% of 500 does not have transhipment
+32% of 500 is complex(per commodity)
+70% of 500 is pending
+headcount EDI:32 SI:13
+
+System Check
+-Check Codes
+
+
+Pending
+-check excel file Alert Sheet
+11+2 leads
+
+
+
+Sending Draft waybill
+-Send Draft to Customer
+-Check if OBL, and if ready for checking
+
+Correction
+8+2leads
+
+Waybill Issuance (on ETD)
+-Check fields
+-check excel for SI
+-Check SI
+-tick checkbox and click save
+15 BLs per day 3-5 minutes
+3+1leads
+
+
+Exchange Rate
+.5
+
+Invoice Issuance (on ETD)
+-Check if Sailing
+-Get info from EXPDOC SOP
+-go to Opus Invoice
+-Select Issue Curr
+-input data from EXPDOC SOP to Opus Invoice
+-save
+*Somecountries require another step after this(2nd invoice)
+
+B/L Data Release
+-get mail request,get BL number
+-in OPUS, go to Manual BDR, search booking, edit BDR field
+.5
+10 per day max 1 minuter per item
+
+
+
+*new enhancement
+-to-be code is used because of deployment of new Opus
+
+
+*Opus Changes to be deployed early march
+Exception steps for inquiry
+*Check if status is VL
+*CHeck if Not updated container doesnt have red
+*check kind/code and update
+*check if zipcode is required
+*check Bin number for Bangladesh
+*check enterprise code for china
+*Check GST#, IEC and email address for India
+*Check for address if "TO Order"
+*Check from Remarks
+*NVO or Not, Based on Filer Type (force error for custom to email correct info)
+*container should have Cargo Receive Date. All Containers should have status = OC
+*Measure should be CBM on booking creation
+*Variance Check on volume difference
+*Check if direct or indirect customer
+*manila should have final destination
+*check custom description
+*Sweden requires MRN
+*HK needs alchohol content percentage
+*Check Export/Import Information
+*Check if P/O is red
+*Status = filed, file first
+*Broken Route
+*No Affiliate
+*Check CNPT(unable to modify.booking does the change)
+*Charge check
+*Check route note
+*RFA Proposal & Amendment
+*Surcharge Check (OBS and BAF Rate)
+*Invoice correction split Before Invoice Issue
+*Terminal codes
+*House B/L Always Filer
+*Check Credit line on Freight receive
+*Detention/Demurrage Checking, get from request(multiple rules on raising inquiry)
+*Long range SKD Inquiry 
+
+
+
+
+
